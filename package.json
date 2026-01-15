@@ -7,8 +7,12 @@
     "start": "node server/server.js"
   },
   "dependencies": {
+<<<<<<< HEAD
     "bcrypt": "^6.0.0",
     "express": "^4.18.2",
     "nodemailer": "^7.0.12"
+=======
+    "express": "^4.18.2"
+>>>>>>> 77a2f74478ae163d534cd90a66f7ef2a503a86e5
   }
 }
