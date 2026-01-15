@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Saved Bilties</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Saved Bilties</h2>
+<ul id="list"></ul>
+
+<button onclick="go('dashboard.html')">Back</button>
+
+<script type="module">
+  import { getBilties } from "./js/storage/index.js";
+
+  const list = document.getElementById("list");
+  const data = await getBilties();
+
+  list.innerHTML = data.map(b =>
+    `<li>${b.biltyNo} | ${b.from} → ${b.to} | ₹${b.amount}</li>`
+  ).join("");
+</script>
+
+<script src="js/app.js"></script>
+</body>
+</html>
