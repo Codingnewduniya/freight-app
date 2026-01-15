@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PM Translogistics – Login</title>
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+<div class="auth-container">
+
+  <div class="brand">
+    <h2>PM Translogistics</h2>
+    <p>Freight Management System</p>
+  </div>
+
+  <div class="tabs">
+    <button id="tab-register" class="active" onclick="switchTab('register')">Register</button>
+    <button id="tab-login" onclick="switchTab('login')">Sign In</button>
+  </div>
+
+  <!-- REGISTER -->
+  <div id="register" class="section active">
+    <input id="company" placeholder="Company Name">
+    <input id="regEmail" placeholder="Email Address">
+    <input id="regPass" type="password" placeholder="Password">
+    <button class="primary" onclick="register()">Register & Get OTP</button>
+  </div>
+
+  <!-- OTP -->
+  <div id="otp" class="section">
+    <input id="otpInput" placeholder="Enter 6-digit OTP">
+    <button class="primary" onclick="verifyOtp()">Verify & Login</button>
+  </div>
+
+  <!-- LOGIN -->
+  <div id="login" class="section">
+    <input id="loginEmail" placeholder="Email Address">
+    <input id="loginPass" type="password" placeholder="Password">
+    <button class="primary" onclick="login()">Sign In</button>
+  </div>
+
+  <div id="msg" class="message"></div>
+
+</div>
+
+<script src="js/auth.js"></script>
+<script>
+function switchTab(tab) {
+  document.querySelectorAll(".section").forEach(s => s.classList.remove("active"));
+  document.querySelectorAll(".tabs button").forEach(b => b.classList.remove("active"));
+
+  document.getElementById(tab).classList.add("active");
+  document.getElementById("tab-" + tab)?.classList.add("active");
+
+  msg.innerText = "";
+}
+</script>
+
+</body>
+</html>

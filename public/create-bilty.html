@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bilty Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      background: #fff;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 10px;
+      border: 1px solid #000;
+    }
+    .sub-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      flex-wrap: wrap;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    .section {
+      margin-top: 10px;
+      font-size: 13px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+    .center {
+      text-align: center;
+    }
+    .notice {
+      border: 1px solid black;
+      padding: 8px;
+      font-size: 12px;
+      margin: 10px 0;
+    }
+    .table {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+      text-align: center;
+      border: 1px solid #000;
+      font-size: 12px;
+    }
+    .table div {
+      padding: 6px;
+      border: 1px solid #000;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    [contenteditable] {
+      display: inline-block;
+      min-width: 60px;
+      border-bottom: 1px solid #000;
+      padding: 2px 4px;
+    }
+    #downloadBtn {
+      margin: 20px auto 0;
+      display: block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+<div class="container" id="capture">
+  <div class="sub-header">
+    <div>
+      <div>GSTIN:- 24ADNPT213M1Z4</div>
+      <div>PAN NO:- ADNPT2137M</div>
+    </div>
+    <div>
+      <div>MOBILE NO:- 9825325765</div>
+      <div>9375312765</div>
+    </div>
+  </div>
+
+  <div class="center">
+    <div class="bold">OM SHREE KRISHNAYE NAMAH</div>
+    <h2 style="color: red;">PM TRANSLOGISTICS</h2>
+    <div>TRANSPORT CONTRACTORS & COMMISSION AGENT</div>
+    <div>office no.40, Parekh Market, plot No.7, Ward No.12/A, GANDHIDHAM(Kutch) 370201</div>
+    <div>Email: pmtranslogistik@gmail.com</div>
+  </div>
+
+  <div class="notice">
+    <strong>NOTICE:</strong> The consignment covered by this set of special lorry receipt form shall be stored at the destination under the control of the transport operator & should be delivered to or the order of the consigner. It will under no circumstances be delivered to any one without the written authority from the consignee bank or its order, endorsed on consignee copy or on separate letter of D/D.
+  </div>
+
+  <div class="section row">
+    <div>ICICI Bank A/C No.: 244305501310</div>
+    <div>RTGS/NEFT/IFSC CODE: ICIC002443</div>
+  </div>
+
+  <div class="section row">
+    <div><strong>No.:</strong> <span contenteditable="true"></span></div>
+    <div>Date: <span contenteditable="true">20-02-2025</span></div>
+    <div>From: <span contenteditable="true">HAMLA</span></div>
+    <div>To: <span contenteditable="true">CHIRKUNDA</span></div>
+    <div>Truck No: <span contenteditable="true">RJ19GG0396</span></div>
+  </div>
+
+  <div class="section row">
+    <div><strong>Consignor:</strong> <span contenteditable="true" style="width: 90%; display: inline-block;"></span></div>
+    <div><strong>GSTIN:</strong> <span contenteditable="true"></span></div>
+  </div>
+
+  <div class="section row">
+    <div><strong>Consignee:</strong> <span contenteditable="true" style="width: 90%; height: 60px; display: inline-block; white-space: pre-wrap;"></span></div>
+    <div><strong>GSTIN:</strong> <span contenteditable="true"></span></div>
+  </div>
+
+  <div class="section table">
+    <div><strong>NO. of Pkg.</strong></div>
+    <div><strong>Description (said to contain)</strong></div>
+    <div><strong>WEIGHT</strong><br>ACTUAL</div>
+    <div><strong>CHARGED</strong></div>
+    <div><strong>RATE</strong><br>FREIGHT</div>
+
+    <div><span contenteditable="true">860</span></div>
+    <div>Bags of Bentonite Powder 50 KG<br>NOTE:- Do not cash pay to driver<br>Freight pay by only NEFT/Cheque<br>Under veor of PM Translogistics</div>
+    <div><span contenteditable="true">43.11</span></div>
+    <div></div>
+    <div>TO PAY<br><span contenteditable="true">193995</span></div>
+  </div>
+
+  <div class="section">
+    <div><strong>Invoice No:</strong> <span contenteditable="true">241124010401</span></div>
+    <div><strong>VALUE:</strong> <span contenteditable="true">172914.00</span></div>
+  </div>
+
+  <div class="footer">
+    <div>The consignment note issued subject to condition printed overleaf. <br>We are not responsible for leakage & breakage.<br><strong>To pay Rs. <span contenteditable="true">193995.00</span> TO PAY Only</strong></div>
+    <div>GST will be paid by:<br>Consignor:- <span contenteditable="true"></span><br>Consignee:- <span contenteditable="true">YES</span><br>Transport:- <span contenteditable="true"></span></div>
+    <div><strong>For, PMTRANSLOGISTICS</strong><br><br>
+      <div style="margin-top: 10px; font-weight: bold; font-size: 16px;">MANAV THAKUR</div>
+    </div>
+  </div>
+
+  <button id="downloadBtn" onclick="downloadPDF()">Download as PDF</button>
+</div>
+
+<!-- Scripts for PDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+  async function downloadPDF() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF('p', 'pt', 'a4');
+    const element = document.getElementById('capture');
+    const canvas = await html2canvas(element, { scale: 2 });
+    const imgData = canvas.toDataURL('image/png');
+    const imgProps = doc.getImageProperties(imgData);
+    const pdfWidth = doc.internal.pageSize.getWidth();
+    const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+    doc.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+    doc.save("bilty_form.pdf");
+  }
+</script>
+</body>
+</html>
